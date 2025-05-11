@@ -1,0 +1,61 @@
+/* light box styles  */
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.lightbox-overlay .btn {
+  position: absolute;
+  transform: translateY(-50%);
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.lightbox-overlay .prev-button {
+  left: 50px;
+  top: 50%;
+}
+
+.lightbox-overlay .next-btn {
+  right: 50px;
+  top: 50%;
+}
+.lightbox-overlay .image-container {
+  max-width: 90vw;
+  max-height: 90vh;
+  position: relative;
+}
+.lightbox-overlay .image-container .image {
+  max-width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+}
+
+.close-btn {
+  top: 5px;
+  right: -15px;
+}
+
+.lightbox-overlay .img-length-info {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+}
